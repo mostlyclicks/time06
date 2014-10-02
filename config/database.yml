@@ -15,9 +15,9 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: time05_development
+  database: refcms_base_development
   pool: 5
-  username: time05
+  username: refcms_base
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
@@ -41,15 +41,15 @@ development:
 test:
   adapter: postgresql
   encoding: unicode
-  database: time05_test
+  database: refcms_base_test
   pool: 5
-  username: time05
+  username: refcms_base
   password:
 
 production:
   adapter: postgresql
   encoding: unicode
-  database: time05_production
+  database: refcms_base_production
   pool: 5
-  username: time05
+  username: refcms_base
   password:
