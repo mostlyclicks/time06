@@ -1,14 +1,25 @@
+@import 'base.css.scss';
 /* Extra small devices (phones, less than 768px) */
 /* No media query since this is the default in Bootstrap */
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
   body {border-top:5px solid blue;}
+  //HOME
+  #top {min-height:720px;}
  }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   body {border-top:5px solid green;}
+  #top {
+    min-height:100vh;
+    h1 {font-size:48px !important;margin:48px 0 !important;}
+    h2 {font-size:18px;font-weight:200;}
+    h3 {font-size:18px;}
+  }
+
+
  }
 
 /* Large devices (large desktops, 1200px and up) */

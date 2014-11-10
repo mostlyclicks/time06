@@ -3,6 +3,7 @@
   <% site_bar = render('/refinery/site_bar', :head => true) -%>
   <head>
     <%= render "/refinery/head" %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body id="<%= canonical_id @page %>">
@@ -14,7 +15,7 @@
       <section id="page">
         <%= yield %>
       </section>
-      <footer>
+      <footer class="site-footer">
         <%= render "/refinery/footer" -%>
       </footer>
     </div>

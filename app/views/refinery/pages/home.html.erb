@@ -1,0 +1,43 @@
+<% @top_bg_image = ['top-bg-1.png', 'top-bg-2.png', 'top-bg-3.png'] %>
+<% @random_bg_image = @top_bg_image.sample %>
+
+<style>
+  #top {background-image:url(/assets/<%= @random_bg_image %>); }
+</style>
+
+
+<section id="top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <h1>Welcome to TIME Sport USA</h1>      
+      </div>
+    </div>
+    <div class="row col-centered" style="margin:0 auto;border:0px solid blue;">
+      <div class="col-lg-8 col-lg-offset-2 col-md-offset-1 col-md-10 text-center" style="border:0px solid red;text-align:center;">
+        <div class="row">
+          <div class='col-xs-4 col-md-4 text-center tri-nav'>
+            <a href="#aktiv" class="scroll-btn"><h2>Technologies</h2></a>
+            <%= link_to image_tag('top-AKTIV.png', class: 'img-responsive img-circle'), '#aktiv',  class: "scroll-btn" %>
+          </div>
+          <div class='col-xs-4 col-md-4  text-center tri-nav'>
+            <a href="#bikes-frames-feature"><h2>Bikes/Frames</h2></a>
+            <%= link_to image_tag('top-bike-4.png', class: 'img-responsive img-circle'), '#bikes-frames-feature', class: "scroll-btn" %>
+          </div>
+          <div class='col-xs-4 col-md-4 text-center tri-nav'>
+            <a href="#pedals"><h2>Pedals</h2></a>
+            <%= link_to image_tag('top-pedal.png', class: 'img-responsive img-circle'), '#pedals', class: "scroll-btn"  %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="top-made-in-france">
+      <div class="col-lg-4 col-lg-offset-4 col-xs-4 col-xs-offset-4 text-center">
+        <h3>Made in France</h3>
+        <%= image_tag 'made-in-france-bars.png', class: 'img-responsive', width: '200' %>
+        <a href="#made-in-france" class="scroll-btn"><span class="fa fa-chevron-circle-down fa-2x"></span></a>
+      </div>
+    </div>
+  </div>
+</section>

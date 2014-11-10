@@ -1,7 +1,7 @@
 $time-red: #d2232a;
 $time-plasma: #e2fe00;
 $light-sans-serif:"Helvetica Neue", Helvetica, Arial, sans-serif;
-$black-light:rgba(0,0,0,.3);
+$black-light:rgba(0,0,0,.1);
 $black-med:rgba(0,0,0,.7);
 $black-black:rgba(0,0,0,1);
 $white-alpha10:rgba(255,255,255,1);
@@ -28,6 +28,12 @@ $link-color:$time-red;
   color:$font-color;
 }
 
+@mixin background-style($bg-size, $bg-pos-x, $bg-pos-y, $bg-repeat) {
+  background-size:$bg-size;
+  background-position-x:$bg-pos-x;
+  background-position-y:$bg-pos-y;
+  background-repeat:$bg-repeat;
+}
 
 h1 {@include text-style(48px, 100, $time-red);}
 h2 {@include text-style(32px, 100, $time-red);}
