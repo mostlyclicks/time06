@@ -9,21 +9,38 @@ footer {padding:0 20px;}
 //HOME
 #top {
   min-height: 80vh;
-
   h1 {@include text-style(24px, 100, $time-red);text-align:center;}
   h2 {@include text-style(11px, 400, $time-red);text-transform:uppercase;}
   a {
-   &:hover {text-decoration:none;}
-   h2 {
-    color:$black-med;
+    &:hover {text-decoration:none;}
+    h2 {
+     color:$black-med;
+    }
+    img {border:1px solid $black-light;}
   }
-  img {border:1px solid $black-light;}
-}
   h3 {@include text-style(14px, 200, $time-red);}
-
   .tri-nav {padding:0 5px;}
   @include background-style(130%, 50%, 100%, no-repeat);
   #top-made-in-france {
     img {margin:0 auto 12px auto;}
+  }
+}
+
+//HOME - MADE IN FRANCE
+#made-in-france {
+  min-height:80vh;
+  position:relative;
+  color:#fff;
+  background-image:url(made-in-france-p3.jpg);
+  @include background-style(cover, 50%, -100px, no-repeat);
+  .row {
+    background-color:rgba(0,0,0,1);
+    padding:0px 20px 20px 20px;
+    position:absolute;
+    bottom:0;
+    p {@include text-style(11px, 200, $white-alpha7);padding-top:10px;}
+    img {margin:10px auto 10px auto;}
+    h1 {@include text-style(24px, 200, $time-red);text-align:center;text-transform:uppercase;}
+    h3 {@include text-style(18px, 200, $time-red);text-align:center;}
   }
 }

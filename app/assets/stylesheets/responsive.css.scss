@@ -7,6 +7,16 @@
   body {border-top:5px solid blue;}
   //HOME
   #top {min-height:720px;}
+  //MADE IN FRANCE
+  #made-in-france {
+    @include background-style(cover, 50%, 100%, no-repeat);
+    .row {
+      padding:40px 0;
+      background-color:rgba(0,0,0,.5) !important;
+      p {font-size:14px;margin-top:1em;}
+    }
+    
+  }
  }
 
 /* Medium devices (desktops, 992px and up) */

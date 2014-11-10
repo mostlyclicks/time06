@@ -1,0 +1,24 @@
+@import 'base.css.scss';
+
+//HOME
+#top {
+  min-height: 80vh;
+
+  h1 {@include text-style(24px, 100, $time-red);text-align:center;}
+  h2 {@include text-style(11px, 400, $time-red);text-transform:uppercase;}
+  a {
+   &:hover {text-decoration:none;}
+   h2 {
+    color:$black-med;
+  }
+  img {border:1px solid $black-light;}
+}
+  h3 {@include text-style(14px, 200, $time-red);}
+
+  .tri-nav {padding:0 5px;}
+  @include background-style(130%, 50%, 100%, no-repeat);
+  #top-made-in-france {
+    img {margin:0 auto 12px auto;}
+  }
+}
+
