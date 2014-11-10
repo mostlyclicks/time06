@@ -3,15 +3,15 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  body {border:1px solid blue;}
+  body {border-top:5px solid blue;}
  }
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
-  body {border:1px solid green;}
+  body {border-top:5px solid green;}
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  body {border:1px solid grey;} 
+  body {border-top:5px solid grey;} 
 }

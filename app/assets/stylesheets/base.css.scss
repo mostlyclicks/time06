@@ -1,0 +1,23 @@
+$time-red: #d2232a;
+$time-plasma: #e2fe00;
+$light-sans-serif:"Helvetica Neue", Helvetica, Arial, sans-serif;
+
+@mixin text-style($font-size, $font-weight, $font-color) {
+  font-family:$light-sans-serif;
+  font-weight:$font-weight;
+  font-size:$font-size;
+  color:$font-color;
+}
+
+
+h1 {@include text-style(48px, 100, $time-red);}
+h2 {@include text-style(32px, 100, $time-red);}
+h3 {@include text-style(24px, 100, $time-red);}
+h4 {@include text-style(18px, 200, $time-red);}
+h5 {@include text-style(14px, 300, $time-red);}
+
+p.lead {@include text-style(16px, 100, $time-red);}
+p {@include text-style(11px, 200, $time-red);}
+
+
+
