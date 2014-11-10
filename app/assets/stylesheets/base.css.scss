@@ -1,6 +1,25 @@
 $time-red: #d2232a;
 $time-plasma: #e2fe00;
 $light-sans-serif:"Helvetica Neue", Helvetica, Arial, sans-serif;
+$black-light:rgba(0,0,0,.3);
+$black-med:rgba(0,0,0,.7);
+$black-black:rgba(0,0,0,1);
+$white-alpha10:rgba(255,255,255,1);
+$white-alpha7:rgba(255,255,255,.7);
+$white-alpha3:rgba(255,255,255,.3);
+
+//Grid
+$grid-gutter-width:0px;
+// $grid-float-breakpoint:992px;
+// $grid-float-breakpoint-max:992px;
+
+//Fonts
+$navbar-default-bg:rgba(200,200,200,.1);
+$navbar-default-link-color:$time-red;
+$border-radius-base:0;
+$navbar-default-link-active-bg:#efefef;
+$navbar-default-link-active-color:#cdcdcd;
+$link-color:$time-red;
 
 @mixin text-style($font-size, $font-weight, $font-color) {
   font-family:$light-sans-serif;
@@ -16,8 +35,70 @@ h3 {@include text-style(24px, 100, $time-red);}
 h4 {@include text-style(18px, 200, $time-red);}
 h5 {@include text-style(14px, 300, $time-red);}
 
-p.lead {@include text-style(16px, 100, $time-red);}
-p {@include text-style(11px, 200, $time-red);}
+p.lead {@include text-style(16px, 100, $black-light);}
+p {@include text-style(11px, 200, $black-med);}
+
+
+//NAV
+.navbar.navbar-default {margin-bottom:0;}
+
+.navbar-brand {
+  img {
+    margin-top:-6px;
+  }
+}
+
+//FOOTER
+* {
+   margin: 0;
+ }
+ html, body {
+   height: 100%;
+   //border-top:5px solid darken($time-red, 20%);
+ }
+
+ p {letter-spacing: .068em;}
+
+ .page-wrap {
+   min-height: 100%;
+   /* equal to footer height */
+   margin-bottom: -580px; 
+ }
+ .page-wrap:after {
+   content: "";
+   display: block;
+ }
+ .site-footer, .page-wrap:after {
+   /* .push must be the same height as footer */
+   height: 580px; 
+ }
+ .site-footer {
+   background: $time-red;
+   padding:40px 20px;
+   color:#fff;
+   ul, li {
+     margin:0;
+     padding:0;
+     list-style:none;
+   }
+   a {
+     color:rgba(255,255,255,.6);
+     &:hover {
+       color:rgba(255,255,255,1);
+     }
+   }
+   small {
+     display:block;
+     margin-top:20px;
+     color:rgba(255,255,255,.3);
+   }
+   h4 {@include text-style(24px, 100, #fff);}
+   span {
+     margin:0 3px;
+   }
+ }
+
+
 
 
 
