@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Refcms_base::Application.load_tasks
+Time06::Application.load_tasks
