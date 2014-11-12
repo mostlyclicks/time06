@@ -18,6 +18,9 @@
     }
     
   }
+  #bikes-frames-feature {
+    #home-bike-bg img {@include home-bike-feature(absolute, -1, 110px, -250px, nil, nil)};
+  }
  }
 
 /* Medium devices (desktops, 992px and up) */
@@ -29,11 +32,17 @@
     h2 {font-size:18px;font-weight:200;}
     h3 {font-size:18px;}
   }
+  #bikes-frames-feature {
+    #home-bike-bg img {@include home-bike-feature(absolute, -1, 120px, -270px, nil, nil)};
+  }
 
 
  }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  body {border-top:5px solid grey;} 
+  body {border-top:5px solid grey;}
+  #bikes-frames-feature {
+    #home-bike-bg img {@include home-bike-feature(absolute, -1, 240px, -100px, nil, nil)};
+  }
 }

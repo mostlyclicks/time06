@@ -8,6 +8,9 @@ $white-alpha10:rgba(255,255,255,1);
 $white-alpha7:rgba(255,255,255,.7);
 $white-alpha3:rgba(255,255,255,.3);
 
+$carousel-indicator-border-color:$black-light;
+$carousel-indicator-active-bg:$black-light;
+
 //Grid
 $grid-gutter-width:0px;
 // $grid-float-breakpoint:992px;
@@ -35,6 +38,15 @@ $link-color:$time-red;
   background-repeat:$bg-repeat;
 }
 
+@mixin home-bike-feature($position, $z-index, $top, $right, $bottom, $left) {
+  position:$position;
+  z-index:$z-index;
+  top:$top;
+  right:$right;
+  bottom:$bottom;
+  left:$left;
+}
+
 h1 {@include text-style(48px, 100, $time-red);}
 h2 {@include text-style(32px, 100, $time-red);}
 h3 {@include text-style(24px, 100, $time-red);}
@@ -52,6 +64,19 @@ p {@include text-style(11px, 200, $black-med);}
   img {
     margin-top:-6px;
   }
+}
+
+//CAROUSEL
+.carousel-caption {
+  color:#cdcdcd;
+  font-size:16px;
+  text-shadow:none;
+}
+
+.carousel-control.left, .carousel-control.right  {
+  background-image:none !important;
+  color:$time-red;
+  top:20%;
 }
 
 //FOOTER

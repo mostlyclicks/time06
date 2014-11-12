@@ -44,3 +44,18 @@ footer {padding:0 20px;}
     h3 {@include text-style(18px, 200, $time-red);text-align:center;}
   }
 }
+
+
+//HOME - BIKE FEATURES
+#bikes-frames-feature {
+  padding-top:40px;
+  min-height:60vh;
+  h1 {@include text-style(30px, 100, $time-red);text-align:center;}
+  h3 {@include text-style(18px, 200, $time-red);text-align:center;}
+  #home-bike-bg img {@include home-bike-feature(absolute, -1, 200px, 0px, nil, nil)};
+  #home-bike-logo img {margin:0 auto;}
+  #collection-link {postion:absolute;bottom:0;}
+  .carousel-indicators {position:absolute;top:-10px;margin-bottom:20px;}
+}
+
+
