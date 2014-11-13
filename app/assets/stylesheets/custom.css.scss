@@ -58,4 +58,14 @@ footer {padding:0 20px;}
   .carousel-indicators {position:absolute;top:-10px;margin-bottom:20px;}
 }
 
+#bikes-frames {
+  padding:40px 0;
+  background-color:lighten($black-light, 60%);
+  h1 {@include text-style(30px, 100, $time-red);text-align:center;}
+  h2 {@include text-style(24px, 100, $black-med);text-align:center;}
+  h3 {@include text-style(14px, 400, $time-red);text-align:center;margin-bottom:50px;}
+  .row {margin-bottom:20px;}
+  
+}
+
 
