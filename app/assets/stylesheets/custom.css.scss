@@ -72,11 +72,17 @@ footer {padding:0 20px;}
 #aktiv {
   padding:40px 20px;
   @include gradient-bg(#000, #fff, 100%);//$start-color, $end-color, $gradient-point
-
   #aktiv-txt {
     p {@include text-style(14px, 200, $white-alpha7);}
     img {margin:0 auto;}
   }
+}
+
+
+//HOME - PEDALS
+#pedals {
+  padding:40px 0;
+  background-color:lighten($black-light, 60%);
 
 }
 
