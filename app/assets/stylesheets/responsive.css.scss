@@ -35,6 +35,9 @@
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 120px, -270px, nil, nil)};
   }
+  #aktiv {
+      @include gradient-bg(#000, #fff, 80%);//$start-color, $end-color, $gradient-point
+  }
 
 
  }
@@ -44,5 +47,8 @@
   body {border-top:5px solid grey;}
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 240px, -100px, nil, nil)};
+  }
+  #aktiv {
+    @include gradient-bg(#000, #fff, 70%);//$start-color, $end-color, $gradient-point
   }
 }

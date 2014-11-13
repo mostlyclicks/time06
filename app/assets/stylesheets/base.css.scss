@@ -131,5 +131,30 @@ p {@include text-style(11px, 200, $black-med);}
 
 
 
+// #aktiv {
+//   background: #fff; /* Old browsers */
+//   background: -moz-linear-gradient(top,  #000000 0%, #000000 65%, #ffffff 65%, #ffffff 100%); /* FF3.6+ */
+//   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000000), color-stop(65%,#000000), color-stop(65%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+//   background: -webkit-linear-gradient(top,  #000000 0%,#000000 65%,#ffffff 65%,#ffffff 100%); Chrome10+,Safari5.1+
+//   background: -o-linear-gradient(top,  #000000 0%,#000000 65%,#ffffff 65%,#ffffff 100%); /* Opera 11.10+ */
+//   background: -ms-linear-gradient(top,  #000000 0%,#000000 65%,#ffffff 65%,#ffffff 100%); /* IE10+ */
+//   background: linear-gradient(to bottom,  #000000 0%,#000000 65%,#ffffff 65%,#ffffff 100%); /* W3C */
+//   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+// }
+
+
+@mixin gradient-bg($start-color, $end-color, $gradient-point) {
+  background: $start-color; /* Old browsers */
+  background: -moz-linear-gradient(top,  $start-color 0%, $start-color $gradient-point, $end-color $gradient-point, $end-color 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop($gradient-point,$start-color), color-stop($gradient-point,$end-color), color-stop(100%,$end-color)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  $start-color 0%,$start-color $gradient-point,$end-color $gradient-point,$end-color 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  $start-color 0%,$start-color $gradient-point,$end-color $gradient-point,$end-color 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  $start-color 0%,$start-color $gradient-point,$end-color $gradient-point,$end-color 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  $start-color 0%,$start-color $gradient-point,$end-color $gradient-point,$end-color 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start-color', endColorstr='$end-color',GradientType=0 ); /* IE6-9 */
+}
+
+
+
 
 

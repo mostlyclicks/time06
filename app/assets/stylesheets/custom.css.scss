@@ -68,4 +68,16 @@ footer {padding:0 20px;}
   
 }
 
+//HOME - AKTIV
+#aktiv {
+  padding:40px 20px;
+  @include gradient-bg(#000, #fff, 100%);//$start-color, $end-color, $gradient-point
+
+  #aktiv-txt {
+    p {@include text-style(14px, 200, $white-alpha7);}
+    img {margin:0 auto;}
+  }
+
+}
+
 
