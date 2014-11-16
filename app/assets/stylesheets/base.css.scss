@@ -10,6 +10,8 @@ $white-alpha3:rgba(255,255,255,.3);
 
 $carousel-indicator-border-color:$black-light;
 $carousel-indicator-active-bg:$black-light;
+$carousel-caption-color:$black-black;
+
 
 //Grid
 $grid-gutter-width:0px;
@@ -45,6 +47,19 @@ $link-color:$time-red;
   right:$right;
   bottom:$bottom;
   left:$left;
+}
+
+@mixin header-style($font-size, $font-weight, $font-color) {
+  font-family:$light-sans-serif;
+  font-weight:$font-weight;
+  font-size:$font-size;
+  color:$font-color;
+}
+
+@mixin bike-hero-style($left-margin, $size) {
+  margin-left:$left-margin;
+  height:$size;
+  width:$size;
 }
 
 h1 {@include text-style(48px, 100, $time-red);}
@@ -88,7 +103,7 @@ p {@include text-style(11px, 200, $black-med);}
    //border-top:5px solid darken($time-red, 20%);
  }
 
- p {letter-spacing: .068em;}
+ p {letter-spacing: .25;}
 
  .page-wrap {
    min-height: 100%;

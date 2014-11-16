@@ -1,0 +1,175 @@
+<!-- START of L2 BIKE CONTENT -->
+
+<style>
+<% if @page.title == 'Izon' %>
+    #l2-bike {background-image:url(/assets/bike-bg-izon.jpg);}
+  <% elsif @page.title == 'Skylon' %>
+    #l2-bike {background-image:url(/assets/bike-bg-skylon.jpg);}
+  <% else %>
+    #l2-bike {background-image:url(/assets/bike-bg-fluidity.jpg);}
+<% end %>
+</style>
+
+
+
+<section class="show" id="l2-bike">
+  <div class="container">
+    <%#= render '/refinery/content_page' %>
+    <div class="row">
+      <div class="col-sm-12 col-md-8 col-lg-8" id="bike-img">
+        <%= image_tag 'Fluidity-AKTIV-yellow-bike.png', class: 'img-responsive1', style: '' %>
+      </div>
+      <div class="col-md-4 col-lg-4" id="bike-main-txt">
+        <%= image_tag 'FLUIDITY-LOGO-black.png', class: 'img-responsive' %>
+        
+          <h3>Endurance</h3>
+          <h3>Fluid Ride</h3>
+          <h3>Performance</h3>
+        
+        <p class="lead">
+          The same hand-made construction and materials as the SKYLON and the IZON but with long rides in mind. Generous use of vibration-damping VECTRAN® woven directly into the carbon tubes along with a more relaxed geometry will make you smile even after 5+ hours into your ride.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="aktiv-choice">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <%= image_tag 'Fluidity-montrouge-frame.png', class: 'img-responsive' %>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6">
+        <%= image_tag 'Fluidity-AKTIV-noir-frame.png', class: 'img-responsive' %>
+      </div>
+    </div>
+    <div class="row">
+
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-lg-offset-1 col-md-4 col-md-offset-1 col-sm-4 col-sm-offset-1">
+        <h1 class="text-center">Smooth...</h1>
+        <p>You enjoy smooth roads with a more relaxed geometry.</p>
+        <p>Like every TIME frame, it's 100% MADE IN FRANCE and uses RTM technology to deliver a strong frame that's a perfect balance of responsiveness and comfort.</p>
+      </div>
+      <div class="col-lg-2 col-md-2 col-sm-2 text-center" id="or">
+        <h1>or</h1>
+      </div>
+      <div class="col-lg-4 col-md-4 col-sm-4">
+        <h1 class="text-center">...Smoother</h1>
+        <p>Not all roads are perfect. And in some places, no roads are perfect. The Fluidty with an AKTIV fork paves the way for you, reducing micro-vibrations (as much as 30%) to your body using tuned-mass damper technology.</p>
+
+        <p>The AKTIV frames also employ the Translink integrated seatmast giving you additional comfort and reducing weight.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%= render 'shared/what_is_aktiv' %>
+
+<% content_for :skylon_stuff do %>
+<!-- 
+<section id="l2-bike-features">
+  <div class="container">
+  <div class="row text-center">
+    <h1>SKYLON Features</h1>
+    <div class="col-lg-3 col-sm-6 col-md-3 text-center bike-feature">
+      <%= image_tag 'headtube.png', class: 'img-responsive img-circle' %>
+      <caption>Larger-section head tube and aerodynamic integrated fork design increase torsional rigidity and steering precision</caption>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-3 text-center bike-feature">
+      <%= image_tag 'bb.png', class: 'img-responsive img-circle' %>
+      <caption>BB386 bottom bracket wider bearing spacing allows increased tubing cross-sections and improves rigidity</caption>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-3 text-center bike-feature">
+      <%= image_tag 'seattube.png', class: 'img-responsive img-circle' %>
+      <caption>Larger-section asymmetrical monobloc chainstays improve power transfer</caption>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-md-3 text-center bike-feature">
+      <%= image_tag 'rear-tri.png', class: 'img-responsive img-circle' %>
+      <caption>Direct link seatpost is lighter and allows increased front-to-rear adjustment. the seat tube angle as measured to the seat clamp is the same as the ZXRS</caption>
+    </div>
+  </div>
+
+  <div class="row" id="bike-features-sub">
+    <div class="col-lg-3 col-sm-6 bike-feature-2 text-center">
+      <h2>Aero</h2>
+      <p>Aerodynamics with CFD Computational Fluid Dynamics</p>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 bike-feature-2 text-center">
+      <h2>+30%</h2>
+      <p>Torsional rigidity vs ZXRS</p>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 bike-feature-2 text-center">
+      <h2>+45%</h2>
+      <p>BOTTOM BRACKET rigidity vs ZXRS</p>
+    </div>
+
+    <div class="col-lg-3 col-sm-6 bike-feature-2 text-center">
+      <h2>Versatile</h2>
+      <p>Electronic &amp; mechanical compatibility</p>
+    </div>
+  </div>
+</div>
+</section>
+-->
+<% end %>
+
+<section id="l2-bike-gallery">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-12">
+      <h1 class="text-center">Gallery</h1>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <% @fluidity_images.each_with_index do |fluidity, index| %>
+            <li data-target="#carousel-example-generic" data-slide-to="<%= index %>" class="<% if index == 0 %>active<% end %>" style="background-color:#cdcdcd;"></li>
+            <% end %>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+            <% @fluidity_images.each_with_index do |fluidity, index| %>
+
+            <div class="item <% if index == 0 %>active<% end %>" >
+              <%= image_tag fluidity[:bike_image], alt: fluidity[:bike_title], class: 'img-responsive gallery-img' %>
+              <div class="carousel-caption">
+                <%= fluidity[:bike_title] %>
+              </div>
+            </div>
+            <% end %>`
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="fa fa-chevron-left fa-2x"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="fa fa-chevron-right fa-2x"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="l2-geometry">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5">
+        <%= image_tag 'TIME-2015-geometry.png', class: 'img-responsive center-it' %>
+      </div>
+      <div class="col-lg-7">
+        <h3>Fluidity Geometry</h3>
+        <%= render 'shared/fluidity_geo_grid' %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- END OF BIKE CONTENT -->

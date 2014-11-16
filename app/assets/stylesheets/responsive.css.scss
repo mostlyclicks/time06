@@ -16,10 +16,20 @@
       p {font-size:14px;margin-top:1em;}
       h3 {@include text-style(24px, 200, $time-red);text-align:center;}
     }
-    
   }
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 110px, -250px, nil, nil)};
+  }
+  #l2-bike {
+    background-position-y:160px;
+    #bike-img {border-bottom:2px solid $time-red;}
+    #bike-main-txt {
+      border-top:0px solid $time-red;
+      p {
+        padding:20px 20px;
+      }
+    }
+    
   }
  }
 
@@ -38,8 +48,21 @@
   #aktiv {
       @include gradient-bg(#000, #fff, 80%);//$start-color, $end-color, $gradient-point
   }
+  #l2-bike {
+    background-position-y:0px;
+    h3 {
+     @include header-style(24px, 100, $black-med);
+     display:knline;
+     margin:0 .15em;
 
-
+     @extend .l2-h3-xs;
+   }
+    #bike-img img {@include bike-hero-style(-520px, 210%);}
+    #bike-img {border-bottom:0px solid $time-red;}
+    #bike-main-txt {
+      border-left:2px solid $time-red;  
+    }
+  }
  }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -50,5 +73,8 @@
   }
   #aktiv {
     @include gradient-bg(#000, #fff, 70%);//$start-color, $end-color, $gradient-point
+  }
+  #l2-bike {
+    #bike-img img {width:170% !important;height:170% !important;margin-left:-410px !important;}
   }
 }
