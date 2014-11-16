@@ -220,3 +220,63 @@ footer {padding:0 20px;}
   }
 
 
+  //AKTIV PAGE
+  #aktiv-header {
+   background-color:#000;
+
+ }
+
+ #aktiv-hero {
+   position:relative;
+   background-color:#121212;
+   background-image:url('AKTIV-bg-2.jpg');
+   background-size:cover;
+   min-height:860px;
+   #hero-txt {
+     //padding-left:100px;
+     position:absolute;
+  
+     padding:20px;
+     top:0%;
+     p {@include header-style(16px, 200, rgba(255,255,255,.6))}
+     img {
+       margin:0 auto;
+     }
+     h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
+   }
+ }
+
+ #aktiv-biker {
+  .row {background:$black-med;}
+   height:auto;
+   padding:20px;
+   background-image:url(AKTIV-2-bg2.jpg);
+   background-size:cover;
+     p {
+       @include header-style(16px, 200, rgba(255,255,255,.6));
+       padding:10px;
+     }
+     h3 {@include header-style(24px, 100, rgba(255,255,255,1));
+      padding:10px;
+     }
+     h2 {
+      padding:10px;
+     }
+ }
+
+ #aktiv-graph {
+   padding:20px;
+   background-color:#000;
+   p {
+       @include header-style(16px, 200, rgba(255,255,255,.6))
+   }
+   h3 {@include header-style(24px, 100, rgba(255,255,255,1))}
+ }
+
+ #aktiv-models {
+   padding:80px 20px;
+   h1 {@include header-style(30px, 100, #000)}
+   h3 {@include header-style(12px, 200, $time-red)}
+ }
+
+

@@ -29,8 +29,24 @@
         padding:20px 20px;
       }
     }
-    
   }
+  #aktiv-biker {
+  .row {background:none;}
+   min-height:100vh;
+   padding:20px;
+   background-image:url(AKTIV-2-bg2.jpg);
+   background-size:cover;
+     p {
+       @include header-style(16px, 200, rgba(255,255,255,.6));
+       padding:10px;
+     }
+     h3 {@include header-style(24px, 100, rgba(255,255,255,1));
+      padding:10px;
+     }
+     h2 {
+      padding:10px;
+     }
+ }
  }
 
 /* Medium devices (desktops, 992px and up) */
