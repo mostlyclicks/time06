@@ -46,7 +46,26 @@
      h2 {
       padding:10px;
      }
+  }
+  #rtm-intro {
+
+   p {
+       margin-top:20px;
+       @include header-style(16px, 200, rgba(255,255,255,.8));
+       background-color:rgba(0,0,0,.2);
+       text-shadow:1px 1px 8px rgba(0,0,0,.5);
+       padding:20px;
+   }
+   a {color:#fff;text-shadow:1px 1px 8px rgba(0,0,0,.2);}
  }
+  #rtm-weaving {
+    img {padding-right:40px;padding-top:20px;}
+  }
+
+  #rtm-resin-injection {
+    img {padding-left:40px;padding-top:20px;}
+  }
+
  }
 
 /* Medium devices (desktops, 992px and up) */
@@ -68,7 +87,7 @@
     background-position-y:0px;
     h3 {
      @include header-style(24px, 100, $black-med);
-     display:knline;
+     display:inline;
      margin:0 .15em;
 
      @extend .l2-h3-xs;

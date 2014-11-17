@@ -31,7 +31,7 @@ footer {padding:0 20px;}
   min-height:80vh;
   position:relative;
   color:#fff;
-  background-image:url(made-in-france-p3.jpg);
+  //background-image:url(made-in-france-p3.jpg);
   @include background-style(cover, 50%, -100px, no-repeat);
   .row {
     background-color:rgba(0,0,0,1);
@@ -279,4 +279,50 @@ footer {padding:0 20px;}
    h3 {@include header-style(12px, 200, $time-red)}
  }
 
+
+//RTM PAGE
+#rtm-intro {
+   height:100vh;
+   padding:80px 0px;
+   background-image:url(rtm-bb-DSC_0194.jpg);
+   background-size:cover;
+   background-position-x:70%;
+   background-position-y:0px;
+   p {
+       margin-top:20px;
+       @include header-style(16px, 200, rgba(255,255,255,.8));
+       background-color:rgba(0,0,0,.8);
+       text-shadow:1px 1px 8px rgba(0,0,0,.5);
+       padding:20px;
+   }
+   a {color:#fff;text-shadow:1px 1px 8px rgba(0,0,0,.2);}
+ }
+
+ #rtm-weaving {
+   padding:40px 20px;
+   h3 {@include header-style(24px, 100, $time-red)}
+   h4 {@include header-style(18px, 200, rgba(0,0,0,.8))}
+   p {
+       letter-spacing:0em;
+       @include header-style(14px, 200, rgba(0,0,0,.5));
+       margin-bottom:2em;
+     }
+ }
+
+ #rtm-resin-injection {
+   background-color:rgba(225,225,225,.1);
+   padding:40px 20px;
+   h3 {@include header-style(24px, 100, $time-red)}
+     p {
+       letter-spacing:0em;
+       @include header-style(14px, 200, rgba(0,0,0,.5));
+       margin-bottom:1em;
+     }
+
+ }
+
+ #rtm-finish {
+
+
+ }
 
