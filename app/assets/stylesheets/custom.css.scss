@@ -322,7 +322,9 @@ footer {padding:0 20px;}
  }
 
  #rtm-finish {
-
-
+  height:350px;
+  background-image:url('rtm-headtube.jpg');
+  //background-image-position-x:-350px;
+  background-size:cover;
  }
 
