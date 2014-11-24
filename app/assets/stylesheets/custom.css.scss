@@ -404,12 +404,13 @@ footer {padding:0 20px;}
  }
 
  #pedal-atac-hero {
+  height:120vh;
    background-image:url(pedals-atac-hero.jpg);
    background-size:cover;
    #pedal-main-txt {
      padding:20px 30px;
      background-color:rgba(0,0,0,.7);
-     height:100vh;
+     height:120vh;
    }
    h3 {
      @include text-style(20px, 100, #fff);
@@ -417,7 +418,7 @@ footer {padding:0 20px;}
      padding:0;
    }
    p {
-     @include text-style(14px, 200, rgba(255,255,255,.5));
+     @include text-style(16px, 200, rgba(255,255,255,.6));
      margin-top:1em;
    }
  }
