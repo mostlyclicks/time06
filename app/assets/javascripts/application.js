@@ -10,7 +10,22 @@
 // WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 // GO AFTER THE REQUIRES BELOW.
 //
-//= require jquery
+// OLD MANIFEST
+// require jquery
+// require jquery_ujs
+// require bootstrap
+// require_tree .
+//
+// NEW MANIFEST
+//= require jquery.min
+//= require jquery.easing.1.3.min
+//= require bootstrap.min
+//= require jquery.flexslider-min
+//= require jquery.mixitup.min
+//= require wow.min
+//= require jquery.stellar.min
+//= require jquery.sticky
+//= require bootstrap-hover-dropdown.min
 //= require jquery_ujs
-//= require bootstrap
+//= require custom
 //= require_tree .
