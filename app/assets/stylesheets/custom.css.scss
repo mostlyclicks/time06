@@ -115,7 +115,7 @@ footer {padding:0 20px;}
   height:100vh;
   text-align:center;
   #bike-main-txt {
-   @extend .l2-main-txt;
+   //@extend .l2-main-txt;
    border-top:2px solid $time-red;
    img {
     margin:0 auto;
@@ -126,7 +126,7 @@ footer {padding:0 20px;}
      display:inline-block;
      margin:0 .25em;
 
-     @extend .l2-h3-xs;
+     //@extend .l2-h3-xs;
    }
    .lead {
    @include text-style(16px, 200, $black-med);
