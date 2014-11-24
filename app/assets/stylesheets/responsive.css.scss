@@ -68,6 +68,17 @@
 
  }
 
+ #dealer-top {
+   // background-position-y:-100px;
+ }
+ #dealers {
+  #dealer-list {
+    padding:80px 20px 20px 40px;
+}
+
+ }
+  
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
   body {border-top:5px solid green;}

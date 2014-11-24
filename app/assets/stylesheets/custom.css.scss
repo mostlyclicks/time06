@@ -435,3 +435,26 @@ footer {padding:0 20px;}
    }
  }
 
+ // DEALERS ////////////////////////////////
+
+ #dealer-top {
+  height:300px;
+  padding:0;
+  background-image:url(contender_6.jpg);
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position-y:50%;
+
+ }
+
+   #dealers {
+
+   padding:20px 20px;
+   h1 {@include header-style(48px, 100, $time-red)}
+   h3 {@include header-style(24px, 100, $time-red)}
+   p {@include header-style(14px, 200, rgba(0,0,0,.5));}
+   #dealer-list {
+    padding:0px 20px 20px 40px;
+   }
+  }
+
