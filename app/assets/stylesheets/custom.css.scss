@@ -360,3 +360,77 @@ footer {padding:0 20px;}
    p {@include header-style(14px, 200, rgba(0,0,0,.5));}
   }
 
+  ////PEDALS L2 /////////////////////////////////////////////////////////////////
+
+ #pedals-xpresso, #pedals-rxs, #pedals-atac-xc, #pedals-atac-mx, #pedal-atac-dh {
+   h3 {@include text-style(16px, 200, $time-red);margin-top:0;}
+   img {@include rotate(-45deg);}
+
+   .atac-logo {@include rotate(0deg);}
+   padding:40px 20px 20px 20px;
+   small {display:block;height:5em;}
+   letter-spacing:0em;
+   @include text-style(14px, 200, rgba(0,0,0,.5));
+   margin-bottom:2em;
+   h1 {@include text-style(24px, 100, $time-red);}
+   h2 {@include text-style(32px, 100, rgba(0,0,0,.7));}
+   p {@include header-style(16px, 200, rgba(0,0,0,.7));}
+ }
+
+ #pedal-xpresso-hero {
+  height:120vh;
+ 
+   background-image:url(Route2-unblur.jpg);
+   background-repeat:no-repeat;
+   // height:auto;
+   background-size:cover;
+   background-position-x:50%;
+   #pedal-main-txt {
+     padding:20px 30px;
+     background-color:rgba(0,0,0,.7);
+     height:120vh;
+   }
+   h3 {
+     @include text-style(20px, 100, #fff);
+     line-height:.25em;
+     padding:0;
+   }
+   p {
+     @include text-style(16px, 200, rgba(255,255,255,.6));
+     margin-top:1em;
+   }
+
+
+ }
+
+ #pedal-atac-hero {
+   background-image:url(pedals-atac-hero.jpg);
+   background-size:cover;
+   #pedal-main-txt {
+     padding:20px 30px;
+     background-color:rgba(0,0,0,.7);
+     height:100vh;
+   }
+   h3 {
+     @include text-style(20px, 100, #fff);
+     line-height:.25em;
+     padding:0;
+   }
+   p {
+     @include text-style(14px, 200, rgba(255,255,255,.5));
+     margin-top:1em;
+   }
+ }
+
+ #pedal-atac-mx {
+     h3 {
+     @include text-style(20px, 200, #fff);
+     line-height:.25em;
+     padding:0;
+   }
+   p {
+     @include text-style(14px, 200, rgba(255,255,255,.5));
+     margin-top:1em;
+   }
+ }
+
