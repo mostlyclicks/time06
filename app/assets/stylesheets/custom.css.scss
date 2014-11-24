@@ -328,3 +328,35 @@ footer {padding:0 20px;}
   background-size:cover;
  }
 
+
+ #pedal-tech-intro {
+   padding:40px 20px ;
+   background-color:#000;
+   h1 {@include header-style(36px, 100, $time-red)}
+   h2 {@include header-style(24px, 100, #fff)}
+   p {
+     letter-spacing:0em;
+     @include header-style(14px, 200, rgba(255,255,255,.5));
+     margin-bottom:1em;
+   }
+ }
+
+ #pedal-tech-road, #pedal-tech-atac {
+   padding:60px 20px;
+   background-color:lighten(#000, 15%);
+   h3 {@include header-style(24px, 100, #fff)}
+   p {@include header-style(14px, 200, rgba(255,255,255,.5));}
+
+ }
+
+ #pedal-tech-atac {
+   background-color:lighten(#000, 30%);
+ }
+
+  #time-pedals {
+   padding:60px 20px;
+    background-color:#fff;
+   h3 {@include header-style(24px, 100, $time-red)}
+   p {@include header-style(14px, 200, rgba(0,0,0,.5));}
+  }
+
