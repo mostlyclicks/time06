@@ -458,3 +458,15 @@ footer {padding:0 20px;}
    }
   }
 
+  .inquiries {
+
+    p {@include text-style(14px, 200, rgba(0,0,0,.5));}
+    p {font-size:14px !important;}
+    padding:20px 0 40px 0;
+    label {margin-right:1em;font-weight:200;}
+    .control-label {font-family:$light-sans-serif !important;}
+    .form-group {padding-bottom:20px;}
+    .btn {margin-left:1em;}
+    small {margin-left:1em;}
+  }
+
