@@ -15,8 +15,8 @@ $carousel-caption-color:$black-black;
 
 //Grid
 $grid-gutter-width:0px;
-// $grid-float-breakpoint:992px;
-// $grid-float-breakpoint-max:992px;
+$grid-float-breakpoint:992px;
+//$grid-float-breakpoint-max:992px;
 
 //Fonts
 $navbar-default-bg:rgba(200,200,200,.1);
@@ -69,6 +69,11 @@ $link-color:$time-red;
   -ms-transform: rotate($angle);
 }
 
+// body {background-color:$time-red;}
+// .row {background-color:#fff;}
+// section, header {background-color:#fff;}
+
+
 h1 {@include text-style(48px, 100, $time-red);}
 h2 {@include text-style(32px, 100, $time-red);}
 h3 {@include text-style(24px, 100, $time-red);}
@@ -115,7 +120,7 @@ p {@include text-style(14px, 200, $black-med);}
  .page-wrap {
    min-height: 100%;
    /* equal to footer height */
-   margin-bottom: -580px; 
+   margin-bottom: -350px; 
  }
  .page-wrap:after {
    content: "";
@@ -123,7 +128,7 @@ p {@include text-style(14px, 200, $black-med);}
  }
  .site-footer, .page-wrap:after {
    /* .push must be the same height as footer */
-   height: 580px; 
+   height: 350px; 
  }
  .site-footer {
    background: $time-red;
@@ -148,6 +153,9 @@ p {@include text-style(14px, 200, $black-med);}
    h4 {@include text-style(24px, 100, #fff);}
    span {
      margin:0 3px;
+   }
+   h5 {
+    @include text-style(24px, 100, #fff);
    }
  }
 

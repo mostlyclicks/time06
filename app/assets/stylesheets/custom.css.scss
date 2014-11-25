@@ -1,6 +1,6 @@
 @import 'base.css.scss';
 
-body {border-top:5px solid red;}
+// body {border-top:5px solid red;}
 p.lead {font-size:18px;}
 p {font-size:14px;}
 section {padding:0px 0px;}
@@ -458,15 +458,36 @@ footer {padding:0 20px;}
    }
   }
 
+#contact {
+  padding:0 20px;
+}
+
   .inquiries {
 
     p {@include text-style(14px, 200, rgba(0,0,0,.5));}
     p {font-size:14px !important;}
-    padding:20px 0 40px 0;
+    padding:20px 0px 40px 0px;
     label {margin-right:1em;font-weight:200;}
     .control-label {font-family:$light-sans-serif !important;}
     .form-group {padding-bottom:20px;}
     .btn {margin-left:1em;}
     small {margin-left:1em;}
   }
+
+  #contact-sidebar {
+    padding:0 20px 20px 20px;
+    margin-top:60px;
+  }
+
+
+   .page-wrap {
+   min-height: 100%;
+   /* equal to footer height */
+   margin-bottom: -350px; 
+ }
+
+  .site-footer, .page-wrap:after {
+   /* .push must be the same height as footer */
+   height: 350px; 
+ }
 

@@ -74,9 +74,20 @@
  #dealers {
   #dealer-list {
     padding:80px 20px 20px 40px;
-}
+  }
 
+.page-wrap {
+   min-height: 100%;
+   /* equal to footer height */
+   margin-bottom: -450px !important; 
  }
+
+  .site-footer, .page-wrap:after {
+   /* .push must be the same height as footer */
+   height: 450px !important; 
+ }
+
+}
   
 
 /* Medium devices (desktops, 992px and up) */
