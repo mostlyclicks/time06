@@ -87,6 +87,12 @@
    height: 450px !important; 
  }
 
+ #contact-sidebar {
+  #time-2015-catalog {
+    width:20%;
+  }
+ }
+
 }
   
 
@@ -120,6 +126,11 @@
       border-left:2px solid $time-red;  
     }
   }
+  #contact-sidebar {
+    #time-2015-catalog {
+      width:20%;
+    }
+ }
  }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -134,4 +145,10 @@
   #l2-bike {
     #bike-img img {width:170% !important;height:170% !important;margin-left:-410px !important;}
   }
+  #contact-sidebar {
+    #time-2015-catalog {
+      width:50%;
+      margin:0 0 10px 10px;
+    }
+ }
 }
