@@ -453,8 +453,8 @@ footer {padding:0 20px;}
    h1 {@include header-style(48px, 100, $time-red)}
    h3 {@include header-style(24px, 100, $time-red)}
    p {@include header-style(14px, 200, rgba(0,0,0,.5));}
-   #dealer-list {
-    padding:0px 20px 20px 40px;
+   .dealer-list {
+    height:6em;
    }
   }
 

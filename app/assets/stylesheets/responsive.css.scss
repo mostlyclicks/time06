@@ -72,9 +72,10 @@
    // background-position-y:-100px;
  }
  #dealers {
-  #dealer-list {
-    padding:80px 20px 20px 40px;
-  }
+   .dealer-list {
+    height:9em;
+    margin-top:20px;
+   }
 
 .page-wrap {
    min-height: 100%;
