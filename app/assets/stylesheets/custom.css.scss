@@ -213,10 +213,17 @@ footer {padding:0 20px;}
   }
 
   #bettini-description {
-   padding:60px 0;
+   padding:60px 20px;
    background-color:#000;
    h1 {@include header-style(56px, 100, #fff);border-top:1px solid rgba(255,255,255,.4);padding-top:.5em;}
    p {@include header-style(14px, 200, rgba(255,255,255,.7));}
+  }
+
+  #bettini-dealers {
+    padding:40px;
+    background-color:#fff;
+    .dealer-list {margin-bottom:1em;}
+    p.lead {@include header-style(16px, 200, rgba(0,0,0,.4));}
   }
 
 
