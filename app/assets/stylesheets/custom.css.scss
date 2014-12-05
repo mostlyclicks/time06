@@ -493,6 +493,12 @@ footer {padding:0 20px;}
 
   }
 
+  #roland-cattin {
+    .lead {@include header-style(14px, 200, rgba(255,255,255,.5));}
+    padding:80px 20px ;
+    background-color:#000;
+  }
+
 
    .page-wrap {
    min-height: 100%;
