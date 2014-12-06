@@ -4,11 +4,12 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  //body {border-top:5px solid blue;}
+  body {border-top:5px solid blue;}
   //HOME
   #top {min-height:720px;}
   //MADE IN FRANCE
   #made-in-france {
+    min-height:700px;
     @include background-style(cover, 50%, 50%, no-repeat);
     .row {
       padding:40px 0;
@@ -18,9 +19,11 @@
     }
   }
   #bikes-frames-feature {
+    min-height:600px;
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 110px, -250px, nil, nil)};
   }
   #l2-bike {
+    min-height:700px;
     background-position-y:160px;
     #bike-img {border-bottom:2px solid $time-red;}
     #bike-main-txt {
@@ -32,7 +35,7 @@
   }
   #aktiv-biker {
   .row {background:none;}
-   min-height:100vh;
+   min-height:1000px;
    padding:20px;
    background-image:url(AKTIV-2-bg2.jpg);
    background-size:cover;
@@ -48,7 +51,7 @@
      }
   }
   #rtm-intro {
-
+    min-height:700px;
    p {
        margin-top:20px;
        @include header-style(16px, 200, rgba(255,255,255,.8));
@@ -66,6 +69,20 @@
     img {padding-left:40px;padding-top:20px;}
   }
 
+ }
+
+ #pedal-xpresso-hero {
+  min-height:700px;
+  #pedal-main-txt {
+    min-height:700px;
+  }
+ }
+
+  #pedal-atac-hero {
+  min-height:700px;
+  #pedal-main-txt {
+    min-height:700px;
+  }
  }
 
  #dealer-top {
@@ -99,13 +116,14 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- // body {border-top:5px solid green;}
+ body {border-top:5px solid green;}
   #top {
     min-height:850px;
     h1 {font-size:48px !important;margin:48px 0 !important;}
     h2 {font-size:18px;font-weight:200;}
     h3 {font-size:18px;}
   }
+
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 120px, -270px, nil, nil)};
   }
@@ -136,7 +154,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  //body {border-top:5px solid grey;}
+  body {border-top:5px solid grey;}
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 240px, -100px, nil, nil)};
   }
