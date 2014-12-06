@@ -4,7 +4,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-  body {border-top:5px solid blue;}
+  //body {border-top:5px solid blue;}
   //HOME
   #top {min-height:720px;}
   //MADE IN FRANCE
@@ -116,7 +116,7 @@
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
- body {border-top:5px solid green;}
+// body {border-top:5px solid green;}
   #top {
     min-height:850px;
     h1 {font-size:48px !important;margin:48px 0 !important;}
@@ -154,7 +154,7 @@
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
-  body {border-top:5px solid grey;}
+  //body {border-top:5px solid grey;}
   #bikes-frames-feature {
     #home-bike-bg img {@include home-bike-feature(absolute, -1, 240px, -100px, nil, nil)};
   }
