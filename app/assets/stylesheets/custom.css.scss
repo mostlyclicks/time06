@@ -462,7 +462,7 @@ footer {padding:0 20px;}
    h3 {@include header-style(24px, 100, $time-red)}
    p {@include header-style(14px, 200, rgba(0,0,0,.5));}
    .dealer-list {
-    height:6em;
+    height:9em;
    }
   }
 
@@ -498,6 +498,73 @@ footer {padding:0 20px;}
     .lead {@include header-style(14px, 200, rgba(255,255,255,.5));}
     padding:80px 20px ;
     background-color:#000;
+  }
+
+  #accessories-top {
+    height:300px;
+    padding:0;
+    background-image:url(accessories.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position-y:50%;
+  }
+
+  #accessories-intro {
+    padding:20px;
+  }
+
+   #pedal-accessories-intro {
+    padding:20px;
+  }
+
+  #handlebars {
+    background-color:rgba(220,220,220,.1);
+    padding:20px;
+     h1 {@include header-style(48px, 100, $time-red)}
+     h2 {@include header-style(24px, 100, $time-red)}
+     //border:1px solid red;
+
+    .accessory-title {
+      color:#000;
+    }
+    .accessory-desc {
+      color:#000;
+    }
+
+  }
+
+  .accessory-title {
+      border-right:0px solid black;
+      border-bottom:2px solid $time-red;
+  }
+  .accessory-desc {
+          border-left:0px solid $time-red;
+        p {padding:20px 0px 20px 0px;}
+  }
+
+
+
+
+
+  #stems, #cleats {
+    img {padding:30px;}
+  }
+  #stems {
+    background-color:#000;
+    padding:20px;
+    h1 {@include header-style(48px, 100, #fff)}
+    h2 {@include header-style(24px, 100, #fff)}
+    .accessory-title {
+      h2, h3 {color:#fff;}
+    }
+    .accessory-desc {
+      p {color:rgba(255,255,255,.6);}
+    }
+
+  }
+
+  #cleat-plates {
+    padding:20px 20px 40px 20px;
   }
 
 
