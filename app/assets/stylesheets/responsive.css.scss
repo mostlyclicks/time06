@@ -37,13 +37,16 @@
   .row {background:none;}
    min-height:1000px;
    padding:20px;
-   background-image:url(AKTIV-2-bg2.jpg);
+   background-image:url(AKTIV-2-white.jpg);
+   background-position-x:-715px;
+   padding-top:180px;
+   padding-bottom:40px;
    background-size:cover;
      p {
-       @include header-style(16px, 200, rgba(255,255,255,.6));
+       @include header-style(16px, 200, rgba(0,0,0,.6));
        padding:10px;
      }
-     h3 {@include header-style(24px, 100, rgba(255,255,255,1));
+     h3 {@include header-style(24px, 100, rgba(0,0,0,1));
       padding:10px;
      }
      h2 {
@@ -173,6 +176,12 @@
   #aktiv {
       @include gradient-bg(#000, #fff, 80%);//$start-color, $end-color, $gradient-point
   }
+  #aktiv-biker {
+   padding-top:200px;
+   background-position-x:-500px;
+   padding-bottom:40px;
+   }
+
   #l2-bike {
     background-position-y:0px;
     h3 {
@@ -227,6 +236,10 @@
   #aktiv {
     @include gradient-bg(#000, #fff, 70%);//$start-color, $end-color, $gradient-point
   }
+  #aktiv-biker {
+   
+   background-position-x:-200px;
+   }
   #l2-bike {
     #bike-img img {width:170% !important;height:170% !important;margin-left:-410px !important;}
   }
