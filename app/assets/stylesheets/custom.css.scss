@@ -502,6 +502,12 @@ footer {padding:0 20px;}
     background-color:rgba(225,225,225,.1);
     .social-item {
       padding:20px;
+      a .fa {
+        color:rgba(0,0,0,.1);
+        &:hover {
+          color:rgba(0,0,0,.2);
+        }
+      }
     }
   }
 
