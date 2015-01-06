@@ -154,6 +154,12 @@
     }
   }
 
+  #email-subscription {
+    background-size:100%;
+    background-position-y:48%;
+    background-position-x:50%;
+  }
+
 }
 
 
@@ -250,6 +256,7 @@
     }
  }
  #email-subscription {
+  height:500px;
   #subscribe-form {
     padding-top:87px;
     padding-left:20px;

@@ -83,7 +83,7 @@ footer {padding:0 20px;}
 //HOME - PEDALS
 #pedals {
   padding:40px 0;
-  background-color:lighten($black-light, 60%);
+  background-color:rgba(235,235,235,.1);
 
 }
 
@@ -499,7 +499,7 @@ footer {padding:0 20px;}
   #social-section {
     
     padding:20px;
-    background-color:rgba(225,225,225,.1);
+    background-color:#fcfcfc;
     .social-item {
       padding:20px;
       a .fa {
@@ -512,11 +512,15 @@ footer {padding:0 20px;}
   }
 
   #email-subscription {
-    padding:60px 20px;
-    background-image:url(time_factory.gif);
+    min-height:400px;
+    padding:110px 20px;
+    background-image:url(TIME-Factory_FRANCE.jpg);
+    background-color:#fcfcfc;
     background-repeat:no-repeat;
-      background-size:cover;
-    background-position-y:20%;
+      background-size:200%;
+    background-position-y:-50px;
+    background-position-x:50%;
+
     input {
       border:1px solid rgba(0,0,0,.3);
     }
