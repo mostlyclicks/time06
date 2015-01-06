@@ -82,8 +82,14 @@ footer {padding:0 20px;}
 
 //HOME - PEDALS
 #pedals {
-  padding:40px 0;
-  background-color:rgba(235,235,235,.1);
+  h1 {
+    color:#fff;
+    text-shadow:0 0 5px rgba(0,0,0,.8);}
+  padding:80px 0;
+  background-image:url(clouds.jpg);
+  background-size:cover;
+  background-position-y:20%;
+  // background-color:rgba(235,235,235,.1);
 
 }
 
