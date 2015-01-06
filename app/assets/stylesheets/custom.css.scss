@@ -511,6 +511,18 @@ footer {padding:0 20px;}
     }
   }
 
+  #email-subscription {
+    padding:60px 20px;
+    background-image:url(time_factory.gif);
+    background-repeat:no-repeat;
+      background-size:cover;
+    background-position-y:20%;
+    input {
+      border:1px solid rgba(0,0,0,.3);
+    }
+
+  }
+
   #roland-cattin {
     .lead {@include header-style(14px, 200, rgba(255,255,255,.5));}
     padding:80px 20px ;
