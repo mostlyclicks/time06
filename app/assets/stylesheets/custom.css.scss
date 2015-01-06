@@ -496,6 +496,15 @@ footer {padding:0 20px;}
 
   }
 
+  #social-section {
+    
+    padding:20px;
+    background-color:rgba(225,225,225,.1);
+    .social-item {
+      padding:20px;
+    }
+  }
+
   #roland-cattin {
     .lead {@include header-style(14px, 200, rgba(255,255,255,.5));}
     padding:80px 20px ;
