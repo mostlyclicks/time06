@@ -314,6 +314,14 @@ footer {padding:0 20px;}
    a {color:#fff;text-shadow:1px 1px 8px rgba(0,0,0,.2);}
  }
 
+ #rtm-youtube {
+  padding:20px 20px 60px 20px;
+  background-color:rgba(0,0,0,.9);
+  h2 {
+    color:#fff;
+  }
+ }
+
  #rtm-weaving {
    padding:40px 20px;
    h3 {@include header-style(24px, 100, $time-red)}
