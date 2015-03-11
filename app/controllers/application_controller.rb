@@ -1,9 +1,13 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-  before_filter :load_home_bikes, :load_skylon_images, :load_izon_images, :load_fluidity_images
+  before_filter :load_home_bikes, :load_skylon_images, :load_izon_images, :load_fluidity_images, :load_geo
 
 
   protected
+
+  def load_geo
+    @geoip = GeoIP.new(Rails.root.join("GeoIP.dat"))
+  end
 
   def load_home_bikes
     @home_bikes = [

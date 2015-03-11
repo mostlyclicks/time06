@@ -12,6 +12,7 @@ gem "sass", "~> 3.2.19"
 gem 'sass-rails',   '~> 3.2.3'
 gem 'rails_12factor'
 gem 'unicorn'
+gem 'geoip', '~> 1.4.0'
 
 
 # Gems used only for assets and not required
