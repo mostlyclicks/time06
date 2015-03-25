@@ -589,6 +589,33 @@ footer {padding:0 20px;}
         p {padding:20px 0px 20px 0px;}
   }
 
+  #first-main {
+    padding:60px 20px;
+    height:580px;
+    background-image:url(first-bg.jpg);
+    background-size:cover;
+    h1 {font-weight:700;}
+    p.lead {color:black;font-weight:300;padding:0em 0 1em 0;}
+  }
+
+  #first-specs {
+    padding:80px 20px;
+    .table {margin:0px 10px;}
+    td {border-top:1px dotted rgba(0,0,0,.1);}
+    td {
+      text-align:center;
+      font-size:1.15em;
+      color:rgba(0,0,0,.5);
+
+
+    }
+
+  }
+
+  #first-geo {
+    padding:80px 20px;
+  }
+
 
 
 
