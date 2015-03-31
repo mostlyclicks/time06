@@ -21,7 +21,7 @@ module Time06
     require 'rack/rewrite'
 
     config.middleware.insert_before(Rack::Lock, Rack::Rewrite) do
-       r301 '/framesets/time-first', 'framesets/first' 
+       r301 '/framesets/time-first', '/framesets/first' 
     end
 
 
