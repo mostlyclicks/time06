@@ -13,6 +13,7 @@ gem 'sass-rails',   '~> 3.2.3'
 gem 'rails_12factor'
 gem 'unicorn'
 gem 'geoip', '~> 1.4.0'
+gem 'rack-rewrite', '~> 1.0.2'
 
 
 # Gems used only for assets and not required
