@@ -647,6 +647,22 @@ footer {padding:0 20px;}
     padding:80px 20px;
   }
 
+  #first-gallery {
+    #first-gallery-left {
+      min-height:800px;
+      background-image:url(pics-IMG_2401.jpg);
+      background-size:cover;
+    }
+    #first-gallery-right {
+      min-height:350px;
+      background-image:url(/assets/pics2-IMG_2375.jpg);
+      background-size:130%;
+      background-position-x:80%;
+      background-repeat:no-repeat;
+
+    }
+  }
+
 
 
 

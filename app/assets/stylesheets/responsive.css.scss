@@ -176,6 +176,24 @@
   }
 
 
+    #first-gallery {
+    #first-gallery-left {
+      min-height:800px;
+      background-image:url(pics-IMG_2401.jpg);
+      background-size:cover;
+    }
+    #first-gallery-right {
+      min-height:800px;
+      background-image:url(/assets/pics2-IMG_2375.jpg);
+      background-size:cover;
+      background-position-x:80%;
+      background-repeat:no-repeat;
+    }
+  }
+
+
+
+
 }
 
 
@@ -238,6 +256,19 @@
    /* .push must be the same height as footer */
    height: 320px !important; 
  }
+
+  #first-gallery-right {
+    min-height:800px;
+    background-image:url(/assets/pics2-IMG_2375.jpg);
+    background-size:cover;
+    background-position-x:70%;
+    background-repeat:no-repeat;
+  }
+  #first-gallery-left {
+    min-height:800px;
+    background-image:url(pics-IMG_2401.jpg);
+    background-size:150%;
+  }
 
 }
 
