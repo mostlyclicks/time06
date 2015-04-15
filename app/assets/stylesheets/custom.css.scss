@@ -596,6 +596,19 @@ footer {padding:0 20px;}
     background-size:cover;
     h1 {font-weight:700;}
     p.lead {color:black;font-weight:300;padding:0em 0 1em 0;}
+
+  }
+
+    #first-main-contender {
+    padding:60px 20px;
+    height:680px;
+    background-image:url(first-bg.jpg);
+    background-size:cover;
+    h1 {font-weight:700;}
+    p.lead {color:black;font-weight:300;padding:0em 0 1em 0;}
+    strong, span {font-size:1.5em;color:$time-red;}
+    #contender-logo {margin:20px auto;text-align:center;}
+
   }
 
   #first-pr {
