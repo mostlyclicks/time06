@@ -26,6 +26,18 @@ footer {padding:0 20px;}
   }
 }
 
+#time-slice {
+    background-image:url(/assets/TIME_slice.png);
+    height:200px;
+    width:100%;
+    background-size: 100%;
+    opacity:.8;
+    position:absolute;
+    top:51px;
+    left:0;
+    background-repeat: no-repeat;
+  }
+
 //HOME - MADE IN FRANCE
 #made-in-france {
   min-height:80vh;
